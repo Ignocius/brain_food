@@ -1,4 +1,7 @@
 let optimizeDestination = function (destination) {    
+    if (!destination) {
+        return
+    }
             
     let destTye = ''
 
@@ -13,6 +16,7 @@ let optimizeDestination = function (destination) {
     switch(destTye) {
         case 'normalDest':
             console.log('single')
+
             break
         case 'relyedDest':
             console.log('rely')
